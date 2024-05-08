@@ -1,0 +1,136 @@
+  [1m[35m (272.5ms)[0m  [1m[35mCREATE DATABASE "project_kanban_development" ENCODING = 'unicode'[0m
+  [1m[35m (275.7ms)[0m  [1m[35mCREATE DATABASE "project_kanban_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2024-05-08 16:32:35 -0300
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 8124)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 18030)
+
+
+  
+ActionView::Template::Error (undefined method `pathname' for #<#<Class:0x00007e2d2ccb8ba8>:0x00007e2d2cd0caa0 @environment=#<Sprockets::CachedEnvironment:0x8a70 root="/home/douglas/programs/projects/projectKanban", paths=["/home/douglas/programs/projects/projectKanban/app/assets/config", "/home/douglas/programs/projects/projectKanban/app/assets/images", "/home/douglas/programs/projects/projectKanban/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/app/assets/stylesheets", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/fonts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/stylesheets", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/vendor/assets/stylesheets", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/stimulus-rails-1.3.3/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/turbo-rails-2.0.5/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actiontext-7.1.3.2/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actiontext-7.1.3.2/app/assets/stylesheets", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actioncable-7.1.3.2/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/activestorage-7.1.3.2/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actionview-7.1.3.2/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/app/javascript", "/home/douglas/programs/projects/projectKanban/vendor/javascript"]>, @metadata={:dependencies=>#<Set: {"environment-version", "environment-paths", "rails-env", "processors:type=text/css&file_type=text/less&pipeline=self", "file-digest:///home/douglas/programs/projects/projectKanban/app/assets/stylesheets/bootstrap_and_overrides.css.less"}>, :required=>#<Set: {}>, :stubbed=>#<Set: {}>, :links=>#<Set: {}>, :to_load=>#<Set: {}>, :to_link=>#<Set: {}>}, @load_path="/home/douglas/programs/projects/projectKanban/app/assets/stylesheets", @logical_path="bootstrap_and_overrides.css", @filename="/home/douglas/programs/projects/projectKanban/app/assets/stylesheets/bootstrap_and_overrides.css.less", @dirname="/home/douglas/programs/projects/projectKanban/app/assets/stylesheets", @content_type="text/css", @required=#<Set: {}>, @stubbed=#<Set: {}>, @links=#<Set: {}>, @dependencies=#<Set: {"environment-version", "environment-paths", "rails-env", "processors:type=text/css&file_type=text/less&pipeline=self", "file-digest:///home/douglas/programs/projects/projectKanban/app/assets/stylesheets/bootstrap_and_overrides.css.less"}>>
+Did you mean?  path_to_image):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-08 16:38:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 6529)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 13407)
+
+
+  
+ActionView::Template::Error (undefined method `pathname' for #<#<Class:0x00007782e49d0c90>:0x00007782e4a22f90 @environment=#<Sprockets::CachedEnvironment:0x8a34 root="/home/douglas/programs/projects/projectKanban", paths=["/home/douglas/programs/projects/projectKanban/app/assets/config", "/home/douglas/programs/projects/projectKanban/app/assets/images", "/home/douglas/programs/projects/projectKanban/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/app/assets/stylesheets", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/fonts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/stylesheets", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/vendor/assets/stylesheets", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/stimulus-rails-1.3.3/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/turbo-rails-2.0.5/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actiontext-7.1.3.2/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actiontext-7.1.3.2/app/assets/stylesheets", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actioncable-7.1.3.2/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/activestorage-7.1.3.2/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actionview-7.1.3.2/app/assets/javascripts", "/home/douglas/programs/projects/projectKanban/app/javascript", "/home/douglas/programs/projects/projectKanban/vendor/javascript"]>, @metadata={:dependencies=>#<Set: {"environment-version", "environment-paths", "rails-env", "processors:type=text/css&file_type=text/less&pipeline=self", "file-digest:///home/douglas/programs/projects/projectKanban/app/assets/stylesheets/bootstrap_and_overrides.css.less"}>, :required=>#<Set: {}>, :stubbed=>#<Set: {}>, :links=>#<Set: {}>, :to_load=>#<Set: {}>, :to_link=>#<Set: {}>}, @load_path="/home/douglas/programs/projects/projectKanban/app/assets/stylesheets", @logical_path="bootstrap_and_overrides.css", @filename="/home/douglas/programs/projects/projectKanban/app/assets/stylesheets/bootstrap_and_overrides.css.less", @dirname="/home/douglas/programs/projects/projectKanban/app/assets/stylesheets", @content_type="text/css", @required=#<Set: {}>, @stubbed=#<Set: {}>, @links=#<Set: {}>, @dependencies=#<Set: {"environment-version", "environment-paths", "rails-env", "processors:type=text/css&file_type=text/less&pipeline=self", "file-digest:///home/douglas/programs/projects/projectKanban/app/assets/stylesheets/bootstrap_and_overrides.css.less"}>>
+Did you mean?  path_to_image):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2024-05-08 16:40:44 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 241.8ms | Allocations: 120265)
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 0.0ms | Allocations: 127142)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/douglas/programs/projects/projectKanban/app/assets/config
+  /home/douglas/programs/projects/projectKanban/app/assets/images
+  /home/douglas/programs/projects/projectKanban/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/app/assets/stylesheets
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/fonts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/stylesheets
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/vendor/assets/stylesheets
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/stimulus-rails-1.3.3/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/turbo-rails-2.0.5/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actiontext-7.1.3.2/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actiontext-7.1.3.2/app/assets/stylesheets
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actioncable-7.1.3.2/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/activestorage-7.1.3.2/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actionview-7.1.3.2/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/app/javascript
+  /home/douglas/programs/projects/projectKanban/vendor/javascript):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2024-05-08 16:42:51 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 35437)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms | Allocations: 42314)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/douglas/programs/projects/projectKanban/app/assets/config
+  /home/douglas/programs/projects/projectKanban/app/assets/images
+  /home/douglas/programs/projects/projectKanban/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/app/assets/stylesheets
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/fonts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/app/assets/stylesheets
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/twitter-bootstrap-rails-5.0.0/vendor/assets/stylesheets
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/stimulus-rails-1.3.3/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/turbo-rails-2.0.5/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actiontext-7.1.3.2/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actiontext-7.1.3.2/app/assets/stylesheets
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actioncable-7.1.3.2/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/activestorage-7.1.3.2/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/vendor/bundle/ruby/3.0.0/gems/actionview-7.1.3.2/app/assets/javascripts
+  /home/douglas/programs/projects/projectKanban/app/javascript
+  /home/douglas/programs/projects/projectKanban/vendor/javascript):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2024-05-08 16:45:33 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 432.2ms | Allocations: 197890)
+Completed 200 OK in 447ms (Views: 438.3ms | ActiveRecord: 0.0ms | Allocations: 205140)
+
+
