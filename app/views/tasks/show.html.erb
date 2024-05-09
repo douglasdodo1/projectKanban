@@ -1,0 +1,13 @@
+<div style="width:100%; height:100%; display: flex; justify-content: center; align-items: center; flex-direction: column;" >
+  <div style="width:25%; height:35%; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+    <%= render @task %>
+
+    <div>
+      <%= link_to "Edit this task", edit_task_path(@task) %> |
+      <%= link_to "Back to tasks", tasks_path %>
+
+      <%= button_to "Destroy this task", @task, method: :delete %>
+    </div>
+  </div>
+</div>

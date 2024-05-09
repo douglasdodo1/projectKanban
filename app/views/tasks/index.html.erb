@@ -1,0 +1,42 @@
+<div style="width:100%; height:100%; display: flex; justify-content: center; align-items: center; flex-direction: column;" id="tasks">  
+  <div style="width:30%; height:50%; display: flex; justify-content: space-between; align-items: center; flex-direction: column; background-color: #f0f0f0;">
+    <div><h1>Tasks</h1></div>
+    <div >
+      <p style="color: green"><%= notice %></p>
+      <% if Rails.cache.exist?('cached_tasks') %>
+        <% @teste = Rails.cache.read('cached_tasks') %>
+
+        <% if @teste.any? %>
+            <div>
+              <% @teste.each do |task|%>
+                  <div style="width:200px;height:100px ;padding: 10px; border: 1px solid black; ">
+                    <div>
+                      <%= task.name %>
+                    </div>
+                    <div style="padding: 10px; width:100%;">
+                      <%= task.description %>
+                    </div>
+
+                    <div>
+                      <%= link_to "Delete", task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
+                    </div>
+                  </div>
+              <% end %>
+            </div>
+
+        <% else %>
+        <h1>No tasks</h1>
+        <% end %>
+
+      <% else %>
+
+      <p>loading...</p>
+      <% end %>
+    </div>
+
+    <div>
+      <%= link_to "New task", new_task_path %>
+    </div>
+  </div>
+  
+</div>

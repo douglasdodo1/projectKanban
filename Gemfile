@@ -33,6 +33,7 @@ gem "twitter-bootstrap-rails"
 # gem "redis", ">= 4.0.1"
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'guard-livereload', '~> 2.5', require: false
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
